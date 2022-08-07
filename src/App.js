@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+
+import HeaderComponent from "./components/HeaderComponent"
+import {
+  Route,
+  Routes
+} from "react-router-dom";
+import  History  from "./components/History";
+import  Launches  from "./components/Launches";  
+import  Rockets  from "./components/Rockets"; 
+import Details from "./components/Details";
 import './App.css';
 
 function App() {
+  const BrowserRouter = window.history.pathname
   return (
-    <div className="App">
+    <div data-testId="App" className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <HeaderComponent />
       </header>
+
+      <Routes history={BrowserRouter}>
+        <Route path="/" element={ <History/> } />
+        <Route exact path="/launches" element={ <Launches/> } />
+        <Route exact path="/rockets" element={ <Rockets/> } />
+        <Route exact path="/rockets/details" element={<Details/>} />
+        <Route exact path="/launches/details" element={<Details/>} />
+        <Route exact path="/details" element={<Details/>} />
+      </Routes>
     </div>
   );
 }
