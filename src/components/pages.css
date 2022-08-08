@@ -3,3 +3,104 @@
      width:1200px;
       text-align:left
 }
+
+.detailsList {
+    margin-left: 240px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.detailsListForRockets {
+    padding-top: 10px;
+    text-align: left;
+}
+
+.detailsListItem {
+    display: initial;
+    margin-top: 60px;
+    text-align: left;
+    width: 50px;
+}
+
+.detailsListTable {
+     margin-top: 20px;
+}
+
+.detailsListTableRow {
+    background-color: lightblue;
+    width: 140px;
+    font-weight: bold ;
+    padding: 10px;
+}
+
+.detailsTableDetails {
+    width: 1000px;
+    display: flex;
+    padding-left: 30px;
+}
+
+.panelList {
+    position: fixed;
+    top: 108;
+    padding-bottom: 0;
+    height: 100%;
+    z-index:1;
+    width: 220px;
+    overflow-x: scroll;
+    background-color: transparent;
+}
+
+.panelListUl {
+    margin:auto;  
+    width: 100%;
+    background-color: #E7E9EB;
+    overflow-y:scroll !important;
+    list-style-type:none;
+    padding-top: 20px;
+}
+
+.panelListUlRocket {
+    height: inherit;
+    margin:auto;  
+    width: 100%;
+    background-color: #E7E9EB;
+    overflow-y:scroll !important;
+    list-style-type:none;
+    padding-top: 20px;
+}
+.panelListLi {
+    padding: 10px;
+    width:140px ;
+    color:darkblue;
+    font-weight:bold ;
+}
+
+.detailsPagediv {
+    margin:10px;
+    border: 1px rodge;
+    width: 500px;
+    align-items: center;
+    display: inline-block;
+    background-color: cadetblue
+}
+
+.detailsPageInnerdiv {
+    padding: 20px; margin-bottom: 1px; border-bottom: 5px ridge
+}
+
+.detailsPageInnerSpan {
+    padding: 20px;
+    font-size: 24px;
+}
+
+.detailsPageTable {
+    display: inline-block; text-align: start; padding: 30px
+}
+
+.detailsPageTableRow {
+    margin: 20px; font-weight:bold
+}
+
+.detailsPageTableRowData {
+    padding-left: 20px;
+}
